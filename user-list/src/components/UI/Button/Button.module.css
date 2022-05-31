@@ -1,0 +1,16 @@
+.button__wrapper {
+  display: flex;
+  justify-content: left;
+}
+
+.button__wrapper button {
+  padding: 0.25rem 1rem;
+  background-color: purple;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.button__wrapper button:hover {
+  opacity: 0.7;
+}
