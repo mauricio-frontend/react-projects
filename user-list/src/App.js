@@ -22,6 +22,10 @@ function App() {
     setUsers([...users, user]);
   };
 
+  const removeUserItem = (id) => {
+    setUsers(users.filter(user => user.id !== id));
+  };
+
   return (
     <div className="App">
       {
@@ -32,7 +36,7 @@ function App() {
       <UserForm
         onAddUser={(user) => updateUsers(user)}
       />
-      <UserList users={users} />
+      <UserList users={users} onRemoveUser={(id) => removeUserItem(id)}/>
     </div>
   );
 }

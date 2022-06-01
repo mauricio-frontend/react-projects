@@ -12,6 +12,9 @@ const UserForm = (props) => {
       age
     });
 
+    setUsername('');
+    setAge('');
+
     event.preventDefault();
   };
 

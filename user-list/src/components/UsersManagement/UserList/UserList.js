@@ -9,6 +9,7 @@ const UserList = (props) => {
             key={user.id}
             name={user.username}
             age={user.age}
+            onRemoveUser={() => props.onRemoveUser(user.id)}
           />
         )
   ) : (
